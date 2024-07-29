@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head><title>animation</title></head>
+<style>
+#main
+{
+width:50%;
+margin:auto;
+border:1px black solid;
+padding:10px;
+}
+
+table {width:100%;
+background:lavender;
+display:block;
+}
+
+td{width:100%}
+
+
+input{type="text"}{width:100%;
+border-radus:3px;
+}
+
+input:valid{
+border-color:#090;
+}
+
+/*campo com dados invalidos*/
+input:invalid{
+border-color:#900;
+}
+
+
+input:required-label::after{
+content:"(required)";
+font-size:o.8em;
+color:#000;
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+<h1 style="padding:20 px;color:945BDD;text-align:center;background:lavender;box-shadow:10px 10px 10px grey"> Form </h1>
+
+<a href="practicework.html"> Back </a>
+
+<div id="main">
+<form action="http://tataplay/user/get.php"  Method="get">
+
+<table border="0";
+cellpadding="4">
+
+
+<captain> User Login Form </captain>
+
+<tr>
+
+<td><label>User Name </label></td>
+<td><input type="text"placeholder=Type username here"required title=Type Username </td>
+</tr>
+
+
+<td><label>Password </label></td>
+<td><input type="password" placeholder="Type Password here" required></td>
+</tr>
+
+
+<td></td>
+<td><input type="submit" value="Login"<input type="reset"></td>
+</tr>
+
+
+
+</form>
+</table>
+</div>
+</body>
+</html>
