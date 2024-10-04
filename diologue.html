@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title></head
+  ><style></style>
+  <body onload="wel()">
+    <h3 style="padding: 10px"><a href="practicework.html"> Back </a></h3>
+    <h1 style="text-align: center; margin-top: 3rem">Javacript Box</h1>
+    <script>
+      var l;
+      function wel() {
+        l = document.createElement("div");
+        document.body.appendChild(l);
+        l.style =
+          "padding:12px;text-align:center;color:purple;width:200px;height:200px;background;rgb(115,124,193);fomt-size:15px;border:1px black solid;box-shadow:10px 10px 10px black;margin:auto; margin-top:6rem;border-radius:20px";
+        l.innerHTML = "<h1>Notification</h1> <hr color='white'/>";
+        l.innerHTML +=
+          "<span style=display:block;margin:15px;font- size:30px'>Welcome to my practice work </span>";
+        l.innerHTML +=
+          "<button onClick='closebox()'style='cursor:pointer; padding:0.5rem 2rem;color:purple;background:tranparent;border-radius:5px'>Close</ buttton>";
+      }
+      function closebox() {
+        document.body.removeChild(l);
+      }
+    </script>
+  </body>
+</html>
