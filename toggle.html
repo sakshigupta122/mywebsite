@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <h3 style="padding: 10px"><a href="js.html"> Back </a></h3>
+    <style>
+      body {
+        background: url("images/mor.jpg");
+        font-family: Arial, sans-serif;
+        transition: 0.3s linear;
+        background-size: cover;
+      }
+
+      body.dark-mode {
+        background: url("images/nig.jpg");
+        background-size: cover;
+      }
+
+      button {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        width: 90px;
+        height: 35px;
+        transition: 0.3s;
+        margin: 3px;
+      }
+
+      /* Dark Mode Button at Bottom Left Corner */
+      .dark-mode-toggle {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+    </style>
+  </head>
+  <body onload="on()">
+    <button id="togglebtn" onclick="modes()">Change</button>
+
+    <script>
+      function on() {
+        var darkbtn = document.getElementById("togglebtn");
+        var Night;
+        Night.innerHTML = "DARK";
+        darkbtn.appendChild(Night);
+      }
+
+      // Function to modes
+      function modes() {
+        document.body.classList.toggle("dark-mode");
+        var sun = document.getElementByID("togglebtn");
+        sun.innerHTML = "LIGHT";
+      }
+    </script>
+  </body>
+</html>

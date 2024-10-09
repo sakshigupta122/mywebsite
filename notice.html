@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+
+  <style>
+    #main {
+      width: 60%;
+      overflow: scroll;
+      border: 3px rgb(241, 233, 233) solid;
+      margin: auto;
+      padding: 35px;
+      text-align: center;
+      text-align: justify;
+      background: #fffefe;
+      font-family: arial;
+      color: rgb(7, 1, 13);
+    }
+
+    .mystyle {
+      background: rgb(212, 230, 230);
+      padding: 5px;
+    }
+  </style>
+
+  <body>
+    <h3 style="padding: 10px"><a href="js.html"> Back </a></h3>
+    <h1 style="text-align: center; margin-top: 3rem">NOTICE PRACTICE</h1>
+
+    <div id="main">
+      <h3>NOTICE</h3>
+      <h5>write a notice for notice writting...</h5>
+    </div>
+
+    <script>
+      var para = document.createElement("p");
+      para.innerHTML = "Write here";
+      para.contentEditable = true;
+      var d = document.getElementById("main");
+      var cname = "TATA";
+      //   alert(d.id);
+      document.title = "Ready";
+      d.appendChild(para);
+
+      para.classList.add("mystyle");
+      function cls() {
+        para.innerHTML = "";
+      }
+
+      function settextcolor() {
+        para.style.color = prompt("set text color ....", "black");
+      }
+    </script>
+
+    <button onclick="cls()">clear</button>
+    <button onclick="settextcolor()">color</button>
+  </body>
+</html>
