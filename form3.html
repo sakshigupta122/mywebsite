@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head><title>Form2</title></head>
+
+<style>
+
+:valid {border:2px solid green:background:white;}
+:invalid {border:2px solid red;}
+
+input:required:valid{background:green:color:white;}
+input:required:invalid{background:red:color:white;}
+
+:focus{background:white;}
+:focus{}
+
+
+</style>
+
+<body>
+
+<h1 style="padding:20 px;color:945BDD;text-align:center;background:lavender;box-shadow:10px 10px 10px grey"> Form </h1>
+
+<a href="practicework.html"> Back </a>
+
+<table border="1" cellpadding="4">
+<form action="http://tataplay/user/get.php" method="post">
+<caption>Registration Form </caption>
+
+
+<tr>
+<td><label for="age" </label></td><td><input id="age" type="number" min="12" max="25" required></td>
+</tr>
+<tr>
+
+<tr>
+<td><label>Message</label></td>
+<td>
+<textarea cols="40" rows="8" placeholder="Type here..."></textarea>
+
+</td>
+</tr>
+
+<tr>
+<td><label>Hobby</label></td>
+<td>
+Reading<input type="checkbox"value="reading">
+Writing<input type="checkbox"value="Writing">
+Dancing<input type="checkbox"value="Dancing">
+Cooking<input type="checkbox"value="Cooking">
+</td>
+</tr>
+
+
+<td><label>Country</label></td>
+<td>
+<select name="country" size="1">
+
+<option value="INDIA">India </option>
+<option value="USA">Usa </option>
+<option value="UK">Uk </option>
+<option value="JAPAN">Japan</option>
+<option value="CHINA">China </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>DOB</label></td>
+</td>
+</tr>
+
+<tr>
+<td><label>Time</label></td>
+<td>
+<input type="Time">
+</td>
+</tr>
+
+<tr>
+<td><label><City</label></td>
+<td>
+<input list="city">
+<datalist id="city">
+<option value="Delhi">
+<option value="Bombay">
+<option value="Chennai">
+<option value="Kolkata">
+<option value="Jaipur">
+</datalist>
+</td>
+</tr>
+<tr>
+<td><label>Color</label></td>
+<td>
+<input type="color">
+</td>
+</tr>
+
+<tr>
+<td><label>Upload File</label></td>
+<td>
+<input type="file">
+</td>
+</tr>
+<tr>
+<td></td><input type="submit" value="Register"><input type="reset"></td>
+</tr>
+</form>
+</table>
+</body>
+</html>
+
