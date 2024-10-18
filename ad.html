@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <h3 style="padding: 10px"><a href="js.html"> Back </a></h3>
+  </head>
+  <body>
+    <script>
+      var w, t;
+      function show_ad() {
+        w = document.createElement("div");
+        w.style =
+          "position:absolute;top:100px;left:20%;width:50%;border;1px solid black-box-shadow:10px 10px 10px gray";
+        w.innerHTML =
+          "<div style='cursor:pointer;padding:10px;text-align:right;position:absolute;left:95%;' onClick = 'aclose()'>❌</div>";
+
+        w.innerHTML += "<img src='images/a3.gif' style='width:100%;'>";
+
+        document.body.appendChild(w);
+      }
+      t = setTimeout("show_ad()", 5000);
+      function aclose() {
+        document.body.removeChild(w);
+      }
+    </script>
+  </body>
+</html>
